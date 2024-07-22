@@ -1,0 +1,6 @@
+sources:
+  - name: vfsg_gdri
+    schema: vsfg_gdri
+    tables:
+      - name: nigeria_data_v2
+        description: Source table for edits to wikimedia_foundation page
