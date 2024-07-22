@@ -1,0 +1,26 @@
+SELECT 
+    response_id,
+    access_to_computer,
+    access_to_internet,
+    hearing_tools_hearing_aids,
+    hearing_tools_cochlear_implants,
+    hearing_tools_other,
+    age_got_hearing_aid,
+    still_wear_hearing_aids,
+    access_to_battery_replacements_repairs,
+    age_got_cochlear_implant,
+    frequency_use_cochlear_implant,
+    access_to_speech_auditory_therapy,
+    access_to_communication_work,
+    access_to_communication_school,
+    access_to_communication_social_events,
+    access_to_communication_healthcare,
+    communicate_with_doctor,
+    enough_interpreters,
+    qualified_interpreters,
+    trust_interpreters,
+    complaint_form_helpful,
+    crisis_communication_confidence,
+    crisis_communication_source
+FROM 
+     {{ ref('stg_nigeria_data') }}
