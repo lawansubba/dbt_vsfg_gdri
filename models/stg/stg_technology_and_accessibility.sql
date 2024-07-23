@@ -1,0 +1,26 @@
+SELECT 
+    CAST(response_id AS UNSIGNED) AS response_id,
+    CAST(access_to_computer AS CHAR(10)) AS access_to_computer,
+    CAST(access_to_internet AS CHAR(10)) AS access_to_internet,
+    CAST(hearing_tools_hearing_aids AS CHAR(10)) AS hearing_tools_hearing_aids,
+    CAST(hearing_tools_cochlear_implants AS CHAR(10)) AS hearing_tools_cochlear_implants,
+    CAST(hearing_tools_other AS CHAR(255)) AS hearing_tools_other,
+    CAST(age_got_hearing_aid AS UNSIGNED) AS age_got_hearing_aid,
+    CAST(still_wear_hearing_aids AS CHAR(10)) AS still_wear_hearing_aids,
+    CAST(access_to_battery_replacements_repairs AS CHAR(10)) AS access_to_battery_replacements_repairs,
+    CAST(age_got_cochlear_implant AS UNSIGNED) AS age_got_cochlear_implant,
+    CAST(frequency_use_cochlear_implant AS CHAR(50)) AS frequency_use_cochlear_implant,
+    CAST(access_to_speech_auditory_therapy AS CHAR(10)) AS access_to_speech_auditory_therapy,
+    CAST(access_to_communication_work AS CHAR(10)) AS access_to_communication_work,
+    CAST(access_to_communication_school AS CHAR(10)) AS access_to_communication_school,
+    CAST(access_to_communication_social_events AS CHAR(10)) AS access_to_communication_social_events,
+    CAST(access_to_communication_healthcare AS CHAR(10)) AS access_to_communication_healthcare,
+    CAST(communicate_with_doctor AS CHAR(10)) AS communicate_with_doctor,
+    CAST(enough_interpreters AS CHAR(10)) AS enough_interpreters,
+    CAST(qualified_interpreters AS CHAR(50)) AS qualified_interpreters,
+    CAST(trust_interpreters AS CHAR(50)) AS trust_interpreters,
+    CAST(complaint_form_helpful AS CHAR(10)) AS complaint_form_helpful,
+    CAST(crisis_communication_confidence AS CHAR(50)) AS crisis_communication_confidence,
+    CAST(crisis_communication_source AS CHAR(255)) AS crisis_communication_source
+FROM 
+    {{ ref('nigeria_data_v2') }}
