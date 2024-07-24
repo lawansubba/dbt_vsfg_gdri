@@ -1,5 +1,8 @@
 SELECT 
     CAST(response_id AS UNSIGNED) AS response_id,
+    CAST(can_afford_healthcare AS CHAR(10)) AS can_afford_healthcare,
+    CAST(need_medical_treatment AS CHAR(50)) AS need_medical_treatment,
+    CAST(satisfaction_with_health AS CHAR(50)) AS satisfaction_with_health,
     CAST(enough_to_eat AS CHAR(10)) AS enough_to_eat,
     CAST(food_supports_health_needs AS CHAR(10)) AS food_supports_health_needs,
     CAST(frequency_of_eating_fresh_fruit_vegetables AS CHAR(50)) AS frequency_of_eating_fresh_fruit_vegetables,
@@ -11,12 +14,7 @@ SELECT
     CAST(reason_not_eating_healthy_household AS CHAR(255)) AS reason_not_eating_healthy_household,
     CAST(reason_not_eating_healthy_not_ready AS CHAR(255)) AS reason_not_eating_healthy_not_ready,
     CAST(reason_not_eating_healthy_other AS CHAR(255)) AS reason_not_eating_healthy_other,
-    CAST(need_medical_treatment AS CHAR(50)) AS need_medical_treatment,
-    CAST(negative_feelings_frequency AS CHAR(50)) AS negative_feelings_frequency,
-    CAST(satisfaction_with_health_services AS CHAR(50)) AS satisfaction_with_health_services,
-    CAST(safety_feeling AS CHAR(50)) AS safety_feeling,
     CAST(violence_communication AS CHAR(255)) AS violence_communication,
-    CAST(can_afford_healthcare AS CHAR(10)) AS can_afford_healthcare,
     CAST(health_disorder_typhoid AS CHAR(10)) AS health_disorder_typhoid,
     CAST(health_disorder_malaria AS CHAR(10)) AS health_disorder_malaria,
     CAST(health_disorder_hiv_aids AS CHAR(10)) AS health_disorder_hiv_aids,
@@ -27,7 +25,6 @@ SELECT
     CAST(health_disorder_ulcers AS CHAR(10)) AS health_disorder_ulcers,
     CAST(health_disorder_other AS CHAR(255)) AS health_disorder_other,
     CAST(protect_from_malaria AS CHAR(255)) AS protect_from_malaria,
-    CAST(satisfaction_with_health AS CHAR(50)) AS satisfaction_with_health,
     CAST(independently_decide_health_needs AS CHAR(50)) AS independently_decide_health_needs
 FROM 
     {{ ref('nigeria_data_v2') }}

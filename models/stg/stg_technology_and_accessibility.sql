@@ -1,5 +1,6 @@
 SELECT 
     CAST(response_id AS UNSIGNED) AS response_id,
+    CAST(satisfaction_with_transportation AS CHAR(50)) AS satisfaction_with_transportation,
     CAST(access_to_computer AS CHAR(10)) AS access_to_computer,
     CAST(access_to_internet AS CHAR(10)) AS access_to_internet,
     CAST(hearing_tools_hearing_aids AS CHAR(10)) AS hearing_tools_hearing_aids,
@@ -10,7 +11,6 @@ SELECT
     CAST(access_to_battery_replacements_repairs AS CHAR(10)) AS access_to_battery_replacements_repairs,
     CAST(age_got_cochlear_implant AS UNSIGNED) AS age_got_cochlear_implant,
     CAST(frequency_use_cochlear_implant AS CHAR(50)) AS frequency_use_cochlear_implant,
-    CAST(access_to_speech_auditory_therapy AS CHAR(10)) AS access_to_speech_auditory_therapy,
     CAST(access_to_communication_work AS CHAR(10)) AS access_to_communication_work,
     CAST(access_to_communication_school AS CHAR(10)) AS access_to_communication_school,
     CAST(access_to_communication_social_events AS CHAR(10)) AS access_to_communication_social_events,
