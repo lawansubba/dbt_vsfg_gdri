@@ -1,0 +1,21 @@
+SELECT 
+    response_id,
+    quality_of_life_rating,
+    enjoyment_of_life,
+    meaningful_life_extent,
+    negative_feelings_frequency,
+    satisfaction_with_health_services,
+    safety_feeling,
+    discriminated_against_due_to_deafness,
+    acceptance_of_bodily_appearance,
+    satisfaction_with_self,
+    satisfaction_with_capacity_for_work,
+    satisfaction_with_daily_living_activities,
+    enough_energy_for_everyday_life,
+    satisfaction_with_sleep,
+    healthy_physical_environment,
+    satisfaction_with_personal_relationships,
+    satisfaction_with_sex_life,
+    satisfaction_with_friends_support
+FROM 
+    {{ ref('stg_quality_of_life_and_satisfaction') }}

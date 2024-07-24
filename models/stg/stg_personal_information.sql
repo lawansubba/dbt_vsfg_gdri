@@ -12,6 +12,8 @@ SELECT
     CAST(monthly_salary AS UNSIGNED) AS monthly_salary,
     CAST(enough_money_for_needs AS CHAR(50)) AS enough_money_for_needs,
     CAST(number_of_jobs AS UNSIGNED) AS number_of_jobs,
-    CAST(work_days_per_week AS UNSIGNED) AS work_days_per_week
+    CAST(work_days_per_week AS UNSIGNED) AS work_days_per_week,
+    CAST(age_began_hearing_loss AS UNSIGNED) AS age_began_hearing_loss,
+    CAST(age_learned_sign_language AS UNSIGNED) AS age_learned_sign_language
 FROM 
     {{ ref('nigeria_data_v2') }}
