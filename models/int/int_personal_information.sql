@@ -16,8 +16,7 @@ SELECT
         WHEN tribal_affiliation = 'Urhobo' THEN 'Urhobo'
         WHEN tribal_affiliation = 'Idoma' THEN 'Idoma'
         WHEN tribal_affiliation = 'Itsekiri and Benin' THEN 'Itsekiri'
-        WHEN tribal_affiliation IN ('Gbagyi', 'Sanga/Gbagyi') THEN 'Other Tribes'
-        WHEN tribal_affiliation IN ('Bachama', 'Isoko', 'Higgi / Kamoe', 'Hoba, Kilba', 'Kunini', 'Margi', 'Chamba', 'Mbula', 'Marighi', 'Berom and Hausa', 'Higgig and Kammie', 'Maxabilla', 'Ron from bokkos local govt of plateau state', 'Waja', 'Obibi') THEN 'Other Tribes'
+        WHEN tribal_affiliation IN ('Gbagyi', 'Sanga/Gbagyi', 'Bachama', 'Isoko', 'Higgi / Kamoe', 'Hoba, Kilba', 'Kunini', 'Margi', 'Chamba', 'Mbula', 'Marighi', 'Berom and Hausa', 'Higgig and Kammie', 'Maxabilla', 'Ron from bokkos local govt of plateau state', 'Waja', 'Obibi') THEN 'Other Tribes'
         ELSE 'Unclassified'
     END AS classified_tribe,
     CASE 
@@ -65,6 +64,46 @@ SELECT
     work_days_per_week
 FROM 
     {{ ref('stg_personal_information') }}
+),
+personal_information as (
+    select 
+        response_id,
+        CASE 
+            WHEN age BETWEEN 0 AND 4 THEN '0-4'
+            WHEN age BETWEEN 5 AND 9 THEN '5-9'
+            WHEN age BETWEEN 10 AND 14 THEN '10-14'
+            WHEN age BETWEEN 15 AND 19 THEN '15-19'
+            WHEN age BETWEEN 20 AND 24 THEN '20-24'
+            WHEN age BETWEEN 25 AND 29 THEN '25-29'
+            WHEN age BETWEEN 30 AND 34 THEN '30-34'
+            WHEN age BETWEEN 35 AND 39 THEN '35-39'
+            WHEN age BETWEEN 40 AND 44 THEN '40-44'
+            WHEN age BETWEEN 45 AND 49 THEN '45-49'
+            WHEN age BETWEEN 50 AND 54 THEN '50-54'
+            WHEN age BETWEEN 55 AND 59 THEN '55-59'
+            WHEN age BETWEEN 60 AND 64 THEN '60-64'
+            WHEN age BETWEEN 65 AND 69 THEN '65-69'
+            WHEN age BETWEEN 70 AND 74 THEN '70-74'
+            WHEN age BETWEEN 75 AND 79 THEN '75-79'
+            WHEN age BETWEEN 80 AND 84 THEN '80-84'
+            WHEN age BETWEEN 85 AND 89 THEN '85-89'
+            WHEN age BETWEEN 90 AND 94 THEN '90-94'
+            WHEN age BETWEEN 95 AND 99 THEN '95-99'
+            ELSE '100+'
+        END AS age_range,
+        sex,
+        classified_tribe,
+        religion,
+        identify_as_queer_gay_bisexual_lesbian_transgender_asexual,
+        relationship_status,
+        is_partner_deaf,
+        current_occupation_status,
+        job_type,
+        monthly_salary,
+        number_of_jobs,
+        work_days_per_week
+    from 
+        stg_personal_information
 )
 
-select * from stg_personal_information
+select * from personal_information
