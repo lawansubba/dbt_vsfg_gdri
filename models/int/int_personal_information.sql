@@ -61,7 +61,56 @@ SELECT
         ELSE '0' 
     END as monthly_salary,
     number_of_jobs,
-    work_days_per_week
+    work_days_per_week,
+    CASE 
+        WHEN age_began_hearing_loss is null THEN 'Unknown'
+        WHEN age_began_hearing_loss BETWEEN 0 AND 4 THEN '0-4'
+        WHEN age_began_hearing_loss BETWEEN 5 AND 9 THEN '5-9'
+        WHEN age_began_hearing_loss BETWEEN 10 AND 14 THEN '10-14'
+        WHEN age_began_hearing_loss BETWEEN 15 AND 19 THEN '15-19'
+        WHEN age_began_hearing_loss BETWEEN 20 AND 24 THEN '20-24'
+        WHEN age_began_hearing_loss BETWEEN 25 AND 29 THEN '25-29'
+        WHEN age_began_hearing_loss BETWEEN 30 AND 34 THEN '30-34'
+        WHEN age_began_hearing_loss BETWEEN 35 AND 39 THEN '35-39'
+        WHEN age_began_hearing_loss BETWEEN 40 AND 44 THEN '40-44'
+        WHEN age_began_hearing_loss BETWEEN 45 AND 49 THEN '45-49'
+        WHEN age_began_hearing_loss BETWEEN 50 AND 54 THEN '50-54'
+        WHEN age_began_hearing_loss BETWEEN 55 AND 59 THEN '55-59'
+        WHEN age_began_hearing_loss BETWEEN 60 AND 64 THEN '60-64'
+        WHEN age_began_hearing_loss BETWEEN 65 AND 69 THEN '65-69'
+        WHEN age_began_hearing_loss BETWEEN 70 AND 74 THEN '70-74'
+        WHEN age_began_hearing_loss BETWEEN 75 AND 79 THEN '75-79'
+        WHEN age_began_hearing_loss BETWEEN 80 AND 84 THEN '80-84'
+        WHEN age_began_hearing_loss BETWEEN 85 AND 89 THEN '85-89'
+        WHEN age_began_hearing_loss BETWEEN 90 AND 94 THEN '90-94'
+        WHEN age_began_hearing_loss BETWEEN 95 AND 99 THEN '95-99'
+	    ELSE '100+'
+    END AS age_began_hearing_loss_range,
+    CASE 
+        WHEN age_learned_sign_language is null THEN 'Unknown'
+        WHEN age_learned_sign_language BETWEEN 0 AND 4 THEN '0-4'
+        WHEN age_learned_sign_language BETWEEN 5 AND 9 THEN '5-9'
+        WHEN age_learned_sign_language BETWEEN 10 AND 14 THEN '10-14'
+        WHEN age_learned_sign_language BETWEEN 15 AND 19 THEN '15-19'
+        WHEN age_learned_sign_language BETWEEN 20 AND 24 THEN '20-24'
+        WHEN age_learned_sign_language BETWEEN 25 AND 29 THEN '25-29'
+        WHEN age_learned_sign_language BETWEEN 30 AND 34 THEN '30-34'
+        WHEN age_learned_sign_language BETWEEN 35 AND 39 THEN '35-39'
+        WHEN age_learned_sign_language BETWEEN 40 AND 44 THEN '40-44'
+        WHEN age_learned_sign_language BETWEEN 45 AND 49 THEN '45-49'
+        WHEN age_learned_sign_language BETWEEN 50 AND 54 THEN '50-54'
+        WHEN age_learned_sign_language BETWEEN 55 AND 59 THEN '55-59'
+        WHEN age_learned_sign_language BETWEEN 60 AND 64 THEN '60-64'
+        WHEN age_learned_sign_language BETWEEN 65 AND 69 THEN '65-69'
+        WHEN age_learned_sign_language BETWEEN 70 AND 74 THEN '70-74'
+        WHEN age_learned_sign_language BETWEEN 75 AND 79 THEN '75-79'
+        WHEN age_learned_sign_language BETWEEN 80 AND 84 THEN '80-84'
+        WHEN age_learned_sign_language BETWEEN 85 AND 89 THEN '85-89'
+        WHEN age_learned_sign_language BETWEEN 90 AND 94 THEN '90-94'
+        WHEN age_learned_sign_language BETWEEN 95 AND 99 THEN '95-99'
+	ELSE '100+'
+END AS age_learned_sign_language_range,
+    age_learned_sign_language
 FROM 
     {{ ref('stg_personal_information') }}
 ),
@@ -101,7 +150,9 @@ personal_information as (
         job_type,
         monthly_salary,
         number_of_jobs,
-        work_days_per_week
+        work_days_per_week,
+        age_began_hearing_loss_range,
+        age_learned_sign_language_range
     from 
         stg_personal_information
 )
