@@ -47,11 +47,8 @@ SELECT
     END as job_type,  
     CASE
         WHEN monthly_salary > 1000000 THEN 'Above 1,000,000'
-        WHEN monthly_salary BETWEEN 500000 AND 1000000 THEN '500,000 - 1,000,000'
-        WHEN monthly_salary BETWEEN 200000 AND 499999 THEN '200,000 - 499,999'
-        WHEN monthly_salary BETWEEN 100000 AND 199999 THEN '100,000 - 199,999'
-        WHEN monthly_salary BETWEEN 50000 AND 99999 THEN '50,000 - 99,999'
-        WHEN monthly_salary BETWEEN 1 AND 49999 THEN '1 - 999'
+        WHEN monthly_salary BETWEEN 500000 AND 1000000 THEN '500,000 - 1,000,000'        
+        WHEN monthly_salary BETWEEN 1 AND 499999 THEN '1 - 499,999'
         ELSE '0' 
     END as monthly_salary,
     number_of_jobs,
