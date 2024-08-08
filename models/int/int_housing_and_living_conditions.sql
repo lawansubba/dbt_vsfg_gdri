@@ -10,7 +10,8 @@ with stg_housing_and_living_conditions as (
         END AS yearly_rent_or_mortgage,
         access_to_clean_water,
         access_to_wash_hands,
-        satisfaction_with_living_conditions
+        satisfaction_with_living_conditions,
+        affordable_transportation
     from
         {{ ref("stg_housing_and_living_conditions") }}
 )
