@@ -29,25 +29,25 @@ SELECT
             crisis_communication_source LIKE '%news%' OR crisis_communication_source LIKE '%media%' OR 
             crisis_communication_source LIKE '%newspaper%' OR crisis_communication_source LIKE '%internet%' OR 
             crisis_communication_source LIKE '%online%' 
-        THEN 'Media (TV, Newspaper, Radio, Internet)'
+        THEN 'Media'
 	
         WHEN crisis_communication_source LIKE '%social media%' OR crisis_communication_source LIKE '%Facebook%' OR 
             crisis_communication_source LIKE '%WhatsApp%' OR crisis_communication_source LIKE '%Messenger%' OR 
             crisis_communication_source LIKE '%social platform%' OR crisis_communication_source LIKE '%internet%' OR 
             crisis_communication_source LIKE '%online%' 
-        THEN 'Social Media & Online Platforms'
+        THEN 'Online Platforms'
         
         WHEN crisis_communication_source LIKE '%family%' OR crisis_communication_source LIKE '%son%' OR 
             crisis_communication_source LIKE '%gesturing%' OR crisis_communication_source LIKE '%friends%' OR 
             crisis_communication_source LIKE '%community%' OR crisis_communication_source LIKE '%neighbors%' OR 
             crisis_communication_source LIKE '%deaf gist%' 
-        THEN 'Family, Friends, and Community'
+        THEN 'Famil and Friends'
         
         WHEN 
             crisis_communication_source LIKE '%doctor%' OR crisis_communication_source LIKE '%hospital%' OR 
             crisis_communication_source LIKE '%health dept%' OR crisis_communication_source LIKE '%healthcare%' OR 
             crisis_communication_source LIKE '%interpreter%' 
-        THEN 'Healthcare Providers (Doctors, Hospitals, Health Departments)'
+        THEN 'Healthcare Providers'
         
         WHEN crisis_communication_source LIKE '%none%' OR crisis_communication_source LIKE '%no information%' OR 
             crisis_communication_source LIKE '%not at all%' OR crisis_communication_source LIKE '%nowhere%' OR 
