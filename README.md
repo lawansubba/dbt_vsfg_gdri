@@ -18,8 +18,8 @@ Data disaggregated from general disability data is essential for advocating for 
 For more details, visit [GDRI Project Page](https://www.vizforsocialgood.com/join-a-project/2024/global-deaf-research-institute).
 
 **Output:**
-- The full report generated from the provided dataset can be viewed and downloaded at [GDRI report](./report/vsfg_gdri_viz.pdf)
-- Some screenshots of the pages of the report are
+- The full report I created from the provided dataset can be viewed and downloaded at [GDRI report](./report/vsfg_gdri_viz.pdf)
+- Some screenshots of the pages of my report are
 
 | ![Image 1](https://github.com/lawansubba/dbt_vsfg_gdri/blob/9bc1787a92b3ad7fcb13b9ad97a57b57dcc8257b/report/vsfg_gdri_viz_page-0001.jpg) | ![Image 2](https://github.com/lawansubba/dbt_vsfg_gdri/blob/9bc1787a92b3ad7fcb13b9ad97a57b57dcc8257b/report/vsfg_gdri_viz_page-0002.jpg) |
 |:--:|:--:|
