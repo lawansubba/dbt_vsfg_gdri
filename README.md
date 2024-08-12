@@ -21,8 +21,7 @@ For more details, visit [GDRI Project Page](https://www.vizforsocialgood.com/joi
 - The full report generated from the provided dataset can be viewed and downloaded at [GDRI report](./report/vsfg_gdri_viz.pdf)
 - Some screenshots of the pages of the report are
 
-<img src="https://github.com/lawansubba/dbt_vsfg_gdri/blob/9bc1787a92b3ad7fcb13b9ad97a57b57dcc8257b/report/vsfg_gdri_viz_page-0001.jpg" width="100" height="100">
-![Page1](./report/vsfg_gdri_viz_page-0001.jpg)
-![Page2](./report/vsfg_gdri_viz_page-0002.jpg)
-![Page3](./report/vsfg_gdri_viz_page-0003.jpg)
-![Page4](./report/vsfg_gdri_viz_page-0004.jpg)
+<img src="https://github.com/lawansubba/dbt_vsfg_gdri/blob/9bc1787a92b3ad7fcb13b9ad97a57b57dcc8257b/report/vsfg_gdri_viz_page-0001.jpg" width="300" height="500">
+<img src="https://github.com/lawansubba/dbt_vsfg_gdri/blob/9bc1787a92b3ad7fcb13b9ad97a57b57dcc8257b/report/vsfg_gdri_viz_page-0002.jpg" width="300" height="500">
+<img src="https://github.com/lawansubba/dbt_vsfg_gdri/blob/9bc1787a92b3ad7fcb13b9ad97a57b57dcc8257b/report/vsfg_gdri_viz_page-0003.jpg" width="300" height="500">
+<img src="https://github.com/lawansubba/dbt_vsfg_gdri/blob/9bc1787a92b3ad7fcb13b9ad97a57b57dcc8257b/report/vsfg_gdri_viz_page-0004.jpg" width="300" height="500">
