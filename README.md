@@ -23,4 +23,4 @@ For more details, visit [GDRI Project Page](https://www.vizforsocialgood.com/joi
 
 | ![Image 1](https://github.com/lawansubba/dbt_vsfg_gdri/blob/9bc1787a92b3ad7fcb13b9ad97a57b57dcc8257b/report/vsfg_gdri_viz_page-0001.jpg) | ![Image 2](https://github.com/lawansubba/dbt_vsfg_gdri/blob/9bc1787a92b3ad7fcb13b9ad97a57b57dcc8257b/report/vsfg_gdri_viz_page-0002.jpg) |
 |:--:|:--:|
-| ![Image 3](https://github.com/lawansubba/dbt_vsfg_gdri/blob/9bc1787a92b3ad7fcb13b9ad97a57b57dcc8257b/report/vsfg_gdri_viz_page-0003.jpg) | ![Image 4](https://github.com/lawansubba/dbt_vsfg_gdri/blob/87c70b9d4d63325af64fba99ff4503c662d5fbe6/report/vsfg_gdri_viz_page-0004.jpg) |
+| ![Image 3](https://github.com/lawansubba/dbt_vsfg_gdri/blob/9bc1787a92b3ad7fcb13b9ad97a57b57dcc8257b/report/vsfg_gdri_viz_page-0003.jpg) | ![Image 4](./report/vsfg_gdri_viz_page-0004.jpg) |
