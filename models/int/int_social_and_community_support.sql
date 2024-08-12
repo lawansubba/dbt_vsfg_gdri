@@ -61,7 +61,7 @@ with stg_social_and_community_support as (
                 significant_challenges_deaf LIKE '%financial%' OR
                 significant_challenges_deaf LIKE '%poverty%' OR
                 significant_challenges_deaf LIKE '%economic%' OR
-                significant_challenges_deaf LIKE '%empowerment%' THEN 'Employment and Economic significant_challenges_deafs'
+                significant_challenges_deaf LIKE '%empowerment%' THEN 'Employment and Economic'
 
             -- Education and Training
             WHEN significant_challenges_deaf LIKE '%education%' OR 

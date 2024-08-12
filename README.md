@@ -16,3 +16,9 @@ Participants can use any software for data visualization and are encouraged to i
 Data disaggregated from general disability data is essential for advocating for deaf communities' healthcare and support needs.
 
 For more details, visit [GDRI Project Page](https://www.vizforsocialgood.com/join-a-project/2024/global-deaf-research-institute).
+
+
+![Screenshot](./report/vsfg_gdri_viz_page-0001.jpg)
+![Screenshot](./report/vsfg_gdri_viz_page-0002.jpg)
+![Screenshot](./report/vsfg_gdri_viz_page-0003.jpg)
+![Screenshot](./report/vsfg_gdri_viz_page-0004.jpg)
