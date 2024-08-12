@@ -23,4 +23,4 @@ For more details, visit [GDRI Project Page](https://www.vizforsocialgood.com/joi
 ![Screenshot](./report/vsfg_gdri_viz_page-0001.jpg | width=100 )
 ![Screenshot](./report/vsfg_gdri_viz_page-0002.jpg | width=100)
 ![Screenshot](./report/vsfg_gdri_viz_page-0003.jpg | width=100)
-![Screenshot](./report/vsfg_gdri_viz_page-0004.jpg| width=100)
+![Screenshot](./report/vsfg_gdri_viz_page-0004.jpg | width=100)
